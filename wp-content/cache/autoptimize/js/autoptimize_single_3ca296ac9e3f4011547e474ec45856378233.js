@@ -1,0 +1,1 @@
+jQuery(window).on('elementor/frontend/init',function(){elementorFrontend.hooks.addAction('frontend/element_ready/rkit-accordion.default',function($scope,$){$scope.find('.rkit-accordion-header').click(function(){$scope.find('.rkit-accordion-item').not($(this).closest('.rkit-accordion-item')).removeClass('open');$(this).closest('.rkit-accordion-item').toggleClass('open');});});});
